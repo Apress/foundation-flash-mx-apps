@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<addressBook>
+	<person>
+		<name>Phillip  Jackson</name>
+		<phone>+44 (0)121 678 100</phone>
+		<email>phillipj@friendsofed.com</email>
+	</person>
+	<person>
+		<name>
+		Arnold Blog</name>
+		<phone>
+		09 9552 6626</phone>
+		<email>
+	
+	
+	arnold@blog.com</email>
+	</person>
+</addressBook>

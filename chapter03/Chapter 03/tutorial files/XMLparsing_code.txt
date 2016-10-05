@@ -1,0 +1,98 @@
+// Fix whitespace big
+XML.prototype.ignoreWhite = true;
+
+// Create XML object and load file
+my_xml = new XML();
+my_xml.onLoad = parsePurchaseXML;
+my_xml.load("purchase_history.xml");
+
+
+// Functions /////////////////////////////////////////////////////
+
+function parsePurchaseXML(success) {
+	// Error check - file loaded?
+	if (success == false) {
+		trace("purchase_history.xml failed to load");
+		return;
+	}
+	
+	// Error check - file okay?
+	if (this.status != 0) {
+		trace("The XML file was loaded, but was not well formed");
+		return;
+	}
+	
+	// Error check - xml data okay?
+	if (this.firstChild.nodeName.toLowerCase() != "purchasehistory") {
+		trace("Unexpected XML data: " + this.firstChild.nodeName);
+		return;
+	}
+	
+	// Extract purchase nodes to array
+	purchases_arr = this.firstChild.childNodes;
+	
+	// For each purchase node...
+	for (var count = 0; count < purchases_arr.length; count++) {
+		// Extract and output purchase details
+		var purchaseID = purchases_arr[count].attributes.id;
+		var purchaseTime = purchases_arr[count].attributes.time;
+		trace("--- Purchase " + purchaseID + " @ " + purchaseTime + " -------------");
+		
+		// Parse purchase node
+		parsePurchaseNode(purchases_arr[count].childNodes);
+		
+		trace("--- End Purchase ------------------");
+		trace("");
+	}
+}
+
+function parsePurchaseNode(purchase_arr) {
+	// For each node in purchase array
+	for (var count = 0; count < purchase_arr.length; count++) {
+		// Extract node name
+		var nodeName = purchase_arr[count].nodeName.toLowerCase();
+		
+		// Is items node?
+		if (nodeName == "items") {
+			// Parse items node
+			parseItemsNode(purchase_arr[count].childNodes);
+
+		// Is client node?
+		} else if (nodeName == "client") {
+			// Parse client node
+			parseClientNode(purchase_arr[count].childNodes);
+		}
+	}
+}
+
+function parseItemsNode(items_arr) {
+	// For each item node in array
+	for (var count = 0; count < items_arr.length; count++) {
+		trace("---- Item " + items_arr[count].attributes.id);
+		
+		// Parse item node
+		parseItemNode(items_arr[count].childNodes);
+		
+		trace("---- End Item");
+	}
+}
+
+function parseItemNode(item_arr) {
+	// For each detail node in item details array
+	for (var count = 0; count < item_arr.length; count++) {
+		// Output node name and value
+		trace("        " + item_arr[count].nodeName + ": " + item_arr[count].firstChild.nodeValue);
+	}
+}
+
+function parseClientNode(client_arr) {
+	trace("---- Client Information");
+	
+	// For each detail node in client details array
+	for (var count = 0; count < client_arr.length; count++) {
+		// Output node name and value
+		trace("        " + client_arr[count].nodeName + ": " + client_arr[count].firstChild.nodeValue);
+	}
+	
+	trace("---- End Client Information");
+}

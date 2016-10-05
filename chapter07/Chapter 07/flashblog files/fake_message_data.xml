@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<FlashBlog>
+
+	<message id="1">
+		<author>
+			<firstName>Scott</firstName>
+			<lastName>Mebberson</lastName>
+		</author>
+		<time>2002, 12, 12, 10, 53</time>
+		<subject>Flash and XML go hand in hand!</subject>
+		<body>This a test message that we'll use to create an XML parsing engine.</body>
+	</message>
+	
+	<message id="2">
+		<author>
+			<firstName>Scott</firstName>
+			<lastName>Mebberson</lastName>
+		</author>
+		<time>2002, 12, 12, 10, 55</time>
+		<subject>www.friendsofed.com</subject>
+		<body>Visit the friends of ED site for information on their range of books.</body>
+	</message>
+	
+	<message id="3">
+		<author>
+			<firstName>Anthony</firstName>
+			<lastName>Stevens</lastName>
+		</author>
+		<time>2002, 10, 9, 16 , 01</time>
+		<subject>www.pixelogic.org</subject>
+		<body>Pixelog is Scott's personal site.</body>
+	</message>
+
+</FlashBlog>

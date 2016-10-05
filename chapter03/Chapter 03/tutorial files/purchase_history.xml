@@ -1,0 +1,44 @@
+<?XML version="1.0"?>
+<PurchaseHistory>
+   <purchase id="1" time="10/24/02 10:15 AM">
+      <items>
+         <item id="1">
+            <productID>GB9983</productID>
+            <quantity>1</quantity>
+            <totalPrice>89.95</totalPrice>
+         </item>
+         <item id="2">
+            <productID>BGH112-9</productID>
+            <quantity>2</quantity>
+            <totalPrice>16.25</totalPrice>
+         </item>
+      </items>
+      <client>
+         <firstName>John</firstName>
+         <lastName>Doe</lastName>
+         <address>123 Easy St</address>
+         <suburb>Beverly Hills</suburb>
+         <postCode>90210</postCode>
+         <phoneNumber>456-445-2236</phoneNumber>
+         <paymentMethod>Credit</paymentMethod>
+      </client>
+   </purchase>
+   <purchase id="2" time="10/24/02 6:20 PM">
+      <items>
+         <item id="1">
+            <productID>SF9985-96</productID>
+            <quantity>1</quantity>
+            <totalPrice>115.22</totalPrice>
+         </item>
+      </items>
+      <client>
+         <firstName>July</firstName>
+         <lastName>Spencer</lastName>
+         <address>100 Some St</address>
+         <suburb>Birmingham</suburb>
+         <postCode>BGH123</postCode>
+         <phoneNumber>219-767-1936</phoneNumber>
+         <paymentMethod>Money Order</paymentMethod>
+      </client>
+   </purchase>
+</PurchaseHistory>

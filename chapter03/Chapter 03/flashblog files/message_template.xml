@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!-- Parent node, all FlashBlog content within -->
+<FlashBlog>
+
+	<!-- The message node contains information for one message only -->
+	<message id="1">
+	
+		<!-- Author node: store first name and last name -->
+		<author>
+			<firstName></firstName>
+			<lastName></lastName>
+		</author>
+		
+		<!-- The time the post was written -->
+		<time></time>
+		
+		<!-- The subject of the post -->
+		<subject></subject>
+		
+		<!-- The body of the post -->
+		<body></body>
+	
+	<!-- Close the message node -->
+	</message>
+
+<!-- Close the parent node -->
+</FlashBlog>

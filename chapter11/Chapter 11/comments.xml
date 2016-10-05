@@ -1,0 +1,27 @@
+<FlashBlog>
+	<message id="1">
+		<author>
+			<firstName></firstName>
+			<lastName></lastName>
+		</author>
+
+        <time></time>
+
+		<subject></subject>
+
+		<body></body>
+
+        <!-- Added comments section -->
+		<comments>
+			<comment id="1">
+				<author></author>
+				<comment></comment>
+			</comment>
+
+			<comment id="2">
+				<author></author>
+				<comment></comment>
+			</comment>
+		</comments>
+	</message>
+</FlashBlog>

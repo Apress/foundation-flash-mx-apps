@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<FlashBlog>
+   <blogLimit>15</blogLimit>
+   <templatePath>SWF/</templatePath>
+   <templateFilename>template.swf</templateFilename>
+</FlashBlog>
