@@ -1,4 +1,4 @@
-#Apress Source Code
+# Apress Source Code
 
 This repository accompanies [*Foundation Flash MX Applications*](http://www.apress.com/9781590591680) by Steve Webster and Scott Mebberson (Apress, 2003).
 
@@ -6,10 +6,10 @@ This repository accompanies [*Foundation Flash MX Applications*](http://www.apre
 
 Download the files as a zip using the green button, or clone the repository to your machine using Git.
 
-##Releases
+## Releases
 
 Release v1.0 corresponds to the code in the published book, without corrections or updates.
 
-##Contributions
+## Contributions
 
 See the file Contributing.md for more information on how you can contribute to this repository.
